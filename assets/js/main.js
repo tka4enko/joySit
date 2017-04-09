@@ -9,6 +9,5 @@ function modal_init(){
             pop2.show.uk.modal();
         })
     },100)
-
 }
 
