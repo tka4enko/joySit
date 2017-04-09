@@ -2,7 +2,7 @@
  "items": [
    {
      "id": 1,
-     "img": "../assets/images/products/lamzac_goroshek.png",
+     "img": "./assets/images/products/lamzac_goroshek.png",
      "name": "Горошек",
      "old-price": "1495грн",
      "price": "1095грн",
@@ -10,7 +10,7 @@
    },
    {
      "id": 2,
-     "img": "../assets/images/products/lamzac_kamufl.png",
+     "img": "./assets/images/products/lamzac_kamufl.png",
      "name": "Камуфляж",
      "old-price": "1495грн",
      "price": "1095грн",
@@ -18,7 +18,7 @@
    },
    {
      "id": 3,
-     "img": "../assets/images/products/lamzac_krasniy.png",
+     "img": "./assets/images/products/lamzac_krasniy.png",
      "name": "Красный",
      "old-price": "1495грн",
      "price": "1095грн",
@@ -26,7 +26,7 @@
    },
    {
      "id": 4,
-     "img": "../assets/images/products/lamzac_mishki.png",
+     "img": "./assets/images/products/lamzac_mishki.png",
      "name": "Мишки",
      "old-price": "1495грн",
      "price": "1095грн",
@@ -34,7 +34,7 @@
    },
    {
      "id": 4,
-     "img": "../assets/images/products/lamzac_zeleniy.png",
+     "img": "./assets/images/products/lamzac_zeleniy.png",
      "name": "Зеленый",
      "old-price": "1495грн",
      "price": "1095грн",
