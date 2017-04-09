@@ -1,0 +1,326 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello, AMPs</title>
+	<link rel="canonical" href="http://example.ampproject.org/article-metadata.html"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/lightbox2/src/css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/uikit/dist/css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/uikit/dist/css/uikit-rtl.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+            "logo.jpg"
+        ]
+    }
+
+
+	</script>
+	<style amp-boilerplate>
+		body {
+			-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			animation: -amp-start 8s steps(1, end) 0s 1 normal both
+		}
+
+		@-webkit-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+			to {
+				visibility: visible
+			}
+		}
+
+		@-moz-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+			to {
+				visibility: visible
+			}
+		}
+
+		@-ms-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+			to {
+				visibility: visible
+			}
+		}
+
+		@-o-keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+			to {
+				visibility: visible
+			}
+		}
+
+		@keyframes -amp-start {
+			from {
+				visibility: hidden
+			}
+			to {
+				visibility: visible
+			}
+		}
+	</style>
+	<noscript>
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: none;
+				-moz-animation: none;
+				-ms-animation: none;
+				animation: none
+			}
+		</style>
+	</noscript>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+	<script async="" custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header"  uk-sticky="top:300;animation: uk-animation-slide-top ">
+			<div class="block-header">
+				<nav class="navbar">
+					<div class="container">
+						<a href="#" class="navbar-brand">Joysit</a>
+						<ul class="navbar-nav collapse">
+							<li><a href="#catalog" uk-scroll="offset:86">Каталог</a></li>
+							<li><a href="#about" uk-scroll="offset:86">Что это?</a></li>
+							<li><a href="#benefit" uk-scroll="offset:86">Преимущества</a></li>
+							<li><a href="#call" uk-scroll="offset:86">Заказать</a></li>
+							<li><a href="#reviews" uk-scroll="offset:86">Отзывы</a></li>
+						</ul>
+						<div class="navbar-phone">
+							<div>
+								<a href="tel:063-82-78-996"><b class="phone">063-82-78-996</b></a>
+							</div>
+							<div>
+								<a href="tel:063-82-78-996"><b class="phone">063-82-78-996</b></a>
+							</div>
+							<div>
+								<a class="phone-link" href="#" uk-toggle="target: #callback">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+	</header>
+	<div class="block  block-modify block-collapse block-inverse block-overlay block-main block-fill-height background-dark">
+
+		<div class="block-body flex-center">
+			<div class="container text-center">
+				<h1 class="block-heading">Lamzac - Надувной портативный шезлонг, который сделает Ваш отдых
+					комфортным!</h1>
+				<div class="block-button">
+					<button class="button button-primary" uk-toggle="target: #buy">Купить!</button>
+				</div>
+			</div>
+		</div>
+		<div class="block-background" style="background-image: url(assets/images/IMG_5816.jpg)"></div>
+		<div class="container">
+			<div class="block-list">
+				<ul>
+					<li><span class="number">1</span>Компактный, легкий и прочный</li>
+					<li><span class="number">2</span>Простой и удобный в использовании</li>
+					<li><span class="number">3</span>Надувается БЕЗ насоса за 15 секунд!</li>
+				</ul>
+			</div>
+		</div>
+		<div class="block-button-bottom">
+			<a href="#main" class="button button-link" uk-scroll="offset:86">
+				<img class="icon" src="assets/images/icon-scrolling.svg" alt=""> ВЫБРАТЬ ШЕЗЛОНГ
+			</a>
+		</div>
+	</div>
+
+	<main class="main" id="main">
+
+		<section id="catalog" class="block block-modify block-collapse block-fill-height">
+			<div class="block-header">
+				<div class="container">
+					<h2 class="block-heading text-center">Выбрать надежный шезлонг "JOYSIT"</h2>
+				</div>
+			</div>
+			<div class="block-body">
+				<div class="container">
+					<amp-list class="items" width="200" height="100" layout="responsive" src="/data/products.json">
+						<template type="amp-mustache">
+							<div class="m1 item">
+								<a href="{{img}}" data-lightbox="product">
+									<amp-img width="640" height="426" layout="responsive" alt="{{name}}"
+											 src="{{img}}"></amp-img>
+								</a>
+								<footer class="item-footer">
+									<p class="item-name">{{name}}</p>
+									<div>
+										<p class="item-old-price">
+											<del>${{old-price}}</del>
+										</p>
+										<p class="item-price">${{price}}</p>
+									</div>
+									<p class="item-button">
+										<button class="button button-primary btn-product">Купить</button>
+									</p>
+								</footer>
+							</div>
+						</template>
+					</amp-list>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="block block-modify block-collapse">
+			<div class="container">
+				<h2 class="block-heading text-center">Что это?</h2>
+				<div class="info">
+					<div class="info-table">
+
+						<div class="info-table-item">
+							<p>Надувной шезлонг(Ламзак) от JoySit - это комфортный надувной диван собственного
+								производства, созданный в Украине, который изготовлен из крепкой износоустойчивой и
+								влагостойкой ткани.</p>
+							<p>На надувном диване Вы можете отдыхать как в одиночку, так вдвоем или даже втроем.
+
+								Гамак готов к Вашему использованию всего через 14 секунд, НЕ требуя насоса, ведь
+
+								все, что нужно сделать - развернуть его из компактной сумки-чехла, взмахивая руками
+
+								наполнить воздухом мешок, завернуть, застегнуть защелку и Ваш надувной лежак готов
+
+								дарить комфорт и удивлять окружающих.</p>
+						</div>
+						<div class="info-table-item bg"
+							 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="benefit" class="block block-modify">
+			<div class="container">
+				<h2 class="block-heading text-center">ПОЧЕМУ ЛАМЗАК(Lamazac) JOYSIT ТАК НРАВИТСЯ НАШИМ ПОКУПАТЕЛЯМ:</h2>
+				<div class="benefit">
+					<ul class="benefit-list">
+						<li class="w1">
+							<i class="fa-volume-down"></i>
+							<span class="benefit-list-content">
+                                   Диван подстраивает свою форму под Вашу фигуру, при этом выдерживет вес до 220 кг
+                               </span>
+						</li>
+						<li class="w2">
+							<i class="fa fa-flip-vertical"></i>
+							<span class="benefit-list-content">
+                                   В собранном состоянии весит 1,2кг, размером 20х35см, в комплекте с удобной сумкой для переноски. Даже ребёнку будет легко носить огромный надувной диван с собой
+							</span>
+						</li>
+						<li class="w3">
+                               <span class="benefit-list-content">Водонепроницаем. Бассейн, речка, море, океан – любые воды подвластны Вашему надувному гамаку</span>
+						</li>
+						<li class="w4">
+							<span class="benefit-list-content">Надувается за 14 сек - пара взмахов рук и надувная подушка готова к использованию</span>
+						</li>
+						<li class="w5">
+                               <span class="benefit-list-content">Надежный. Крайне устойчив к повреждениям и износу. Скреплен армированной нитью (именно эта нить используется для создания бронежилетов).</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="call" class="block  block-modify block-bg block-overlay block-inverse background-dark" style="background-image:url(assets/images/block_form.jpg);">
+			<div class="container">
+				<h2 class="text-center block-heading block-heading-light">Заказать</h2>
+				<form action="" class="main-form">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control" placeholder="Имя *">
+					</div>
+					<div class="form-group">
+						<input type="phone" name="phone" class="form-control" placeholder="Телефон *">
+					</div>
+					<div class="form-group">
+						<input type="email" name="phone" class="form-control" placeholder="E-Mail *">
+					</div>
+					<div class="form-group">
+						<textarea name="commnet" id="" cols="30" rows="10" class="form-control" Placeholder="Комментарий"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="button button-primary button-block">
+					</div>
+				</form>
+
+			</div>
+
+		</section>
+	</main>
+	<!-- This is the modal -->
+	<div id="callback" uk-modal>
+		<div class="uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close" type="button">x</button>
+			<h2 class="uk-modal-title block-heading">Заказать обратный звонок</h2>
+			<form action="" class="callback">
+				<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя"></div>
+				<div class="form-group"><input type="phone" name="phone" class="form-control" placeholder="Телефон"></div>
+				<div class="form-group"><textarea name="#" cols="30" rows="10" class="form-control" placeholder="Комментарий"></textarea></div>
+				<div class="form-group">
+					<input type="submit" class="button button-primary button-block" value="Заказать">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- This is the modal -->
+	<div id="buy" uk-modal>
+		<div class="uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close" type="button">x</button>
+			<h2 class="uk-modal-title block-heading">Заказать ламзак</h2>
+			<form action="" class="callback">
+				<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя"></div>
+				<div class="form-group"><input type="phone" name="phone" class="form-control" placeholder="Телефон"></div>
+				<div class="form-group"><textarea name="#" cols="30" rows="10" class="form-control" placeholder="Комментарий"></textarea></div>
+				<div class="form-group">
+					<input type="submit" class="button button-primary button-block" value="Заказать">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- This is the modal -->
+	<div id="product" uk-modal>
+		<div class="uk-modal-dialog uk-modal-body">
+			<button class="uk-modal-close" type="button">x</button>
+			<h2 class="uk-modal-title block-heading">Заказать ламзак</h2>
+			<form action="" class="callback">
+				<!--<input type="hidden" class="price">-->
+				<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя"></div>
+				<div class="form-group"><input type="phone" name="phone" class="form-control" placeholder="Телефон"></div>
+				<div class="form-group"><textarea name="#" cols="30" rows="10" class="form-control" placeholder="Комментарий"></textarea></div>
+				<div class="form-group">
+					<input type="submit" class="button button-primary button-block" value="Заказать">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+<script src="bower_components/uikit/dist/js/uikit.js"></script>
+<script src="bower_components/uikit/dist/js/uikit-icons.js"></script>
+<script src="bower_components/lightbox2/src/js/lightbox.js"></script>
+</body>
+
+</html>

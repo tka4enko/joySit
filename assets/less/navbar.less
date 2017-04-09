@@ -1,0 +1,82 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background: transparent;
+    transition: background .3s;
+    // color: #232429;
+    > .container {
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        flex-wrap: inherit;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-brand {
+    	display: block;
+        font-size: 44px;
+       	line-height: 1;
+        font-family: 'Baloo Bhaina', cursive;
+        > img {
+        	display: block;
+        }
+    }
+    &-nav {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &.collapse{
+            @media(max-width: 767px){
+                display: none;
+            }
+        }
+        > li {
+            padding: 0 15px;
+            @media(max-width: 991px){
+                padding: 0 10px;
+            }
+            > a,
+            > span {
+                padding: 10px 0;
+            	font-weight: 300;
+                display: block;
+                border-bottom: 2px solid transparent;
+                &:hover {
+                	border-bottom-color: currentColor;
+                }
+            }
+            &.is-active {
+            	> a,
+            	> span {
+            		border-bottom-color: currentColor;
+            	}
+            }
+        }
+    }
+}
+
+.navbar-phone {
+
+}
+.phone {
+    letter-spacing: 1.4px;
+    &-link {
+        border-bottom: 1px dashed;
+    }
+}
+.uk-active{
+    .navbar{
+        background: rgba(255,84,58,.7);
+    }
+}

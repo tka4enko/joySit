@@ -1,0 +1,192 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    &-modify{
+        padding: 100px 0;
+        @media(max-width: 1199px){
+            padding: 70px 0;
+        }
+        @media(max-width: 991px){
+            padding: 50px 0;
+        }
+        @media(max-width: 767px){
+            padding: 40px 0;
+        }
+    }
+    &-collapse{
+        padding-bottom: 0;
+    }
+
+    &-bg{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &-fill-height {
+        min-height: 100vh;
+    }
+    &-inverse {
+        color: #fff;
+    }
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -10;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    &-heading {
+        font-size: 40px;
+        line-height: 1.2;
+        @media(max-width: 991px){
+            font-size: 30px;
+        }
+        @media(max-width: 767px){
+            font-size: 22px;
+        }
+    }
+    &-heading{
+        font-size: 40px;
+        line-height: 1.2;
+        @media(max-width: 991px){
+            font-size: 30px;
+        }
+        @media(max-width: 767px){
+            font-size: 22px;
+        }
+    }
+    &-description {
+        font-size: 20px;
+    }
+    &-main {
+        .block {
+            &-heading {
+                font-size: 40px;
+                @media(max-width:767px){
+                    font-size: 30px;
+                }
+                @media(max-width:480px){
+                    font-size: 22px;
+                }
+            }
+            &-description {
+                font-size: 2vw;
+            }
+        }
+    }
+    &-overlay {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -5;
+            background-color: inherit;
+            opacity: 0.6;
+        }
+    }
+    &-body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+    }
+    &-header {}
+    &-footer {}
+}
+
+
+
+.block-list {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    text-align: center;
+    @media(max-width: 767px){
+        padding: 10px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        display: flex;
+        // flex-wrap: wrap;
+        @media(max-width: 480px){
+            flex-direction: column;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        > li {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5px;
+            @media(max-width: 480px){
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+            }
+            .number {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                min-width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+.block-button-bottom {
+    text-align: center;
+    padding: 10px 0;
+    .button {
+        // border-bottom-left-radius: 0;
+        // border-bottom-right-radius: 0;
+    }
+    .icon {
+        animation-delay: 2s;
+        animation-name: swing;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes swing {
+    2% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg)
+    }
+    4% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg)
+    }
+    6% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg)
+    }
+    8% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg)
+    }
+    10% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg)
+    }
+}

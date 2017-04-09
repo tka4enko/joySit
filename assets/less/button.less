@@ -1,0 +1,49 @@
+.button {
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 40px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+    	text-decoration: none;
+    }
+    &:focus {
+    	outline: none;
+    }
+    .icon {
+    	font-size: 2em;
+    	vertical-align: middle;
+    }
+    &-link {
+    	&:hover,
+    	&:focus {
+    		// color: #ff543a;
+    		opacity: 0.8;
+    	}
+    }
+}
+.button-block{
+  width: 100%;
+  display: block;
+}
+.button-primary {
+    background-color: #ff543a;
+    color: #fff;
+    &:hover,
+    &:focus {
+		background-color: lighten(#ff543a, 5%);
+    }
+}

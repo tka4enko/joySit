@@ -1,0 +1,22 @@
+{
+  "name": "joysit",
+  "homepage": "https://github.com/djvang/tester",
+  "authors": [
+    "van-g <djvang92@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^3.0.0",
+    "normalize-css": "normalize.css#^5.0.0",
+    "lightbox2": "^2.9.0"
+  }
+}

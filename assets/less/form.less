@@ -1,0 +1,45 @@
+.main-form{
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: -20px;
+  @media(max-width: 480px){
+    width: 100%;
+  }
+  .form{
+    &-control{
+      background: transparent;
+      width: 100%;
+      color: darken(#fff,10%);
+      border:1px solid #fff;
+    }
+  }
+}
+.callback{
+  .form{
+    &-control{
+      width: 100%;
+      border:1px solid #222328;
+      &::placeholder{
+        color: #222328;
+      }
+    }
+
+  }
+}
+.form{
+  &-group{
+    margin-bottom: 20px;
+  }
+  &-control{
+    border-radius: 5px;
+    padding: 10px 20px;
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder {color: transparent}
+    &:focus:-moz-placeholder {color: transparent}
+    &:focus:-ms-input-placeholder {color: transparent}
+    &::placeholder{
+      color: #fff;
+    }
+
+  }
+}
