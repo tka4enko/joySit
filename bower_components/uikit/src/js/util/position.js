@@ -8,12 +8,18 @@ var dirs = {
 
 export function position(element, target, attach, targetAttach, offset, targetOffset, flip, boundary) {
 
+    attach = getPos(attach);
+    targetAttach = getPos(targetAttach);
+
+    var flipped = {element: attach, target: targetAttach};
+
+    if (!element) {
+        return flipped;
+    }
+
     var dim = getDimensions(element),
         targetDim = getDimensions(target),
         position = targetDim;
-
-    attach = getPos(attach);
-    targetAttach = getPos(targetAttach);
 
     moveTo(position, attach, dim, -1);
     moveTo(position, targetAttach, targetDim, 1);
@@ -29,8 +35,6 @@ export function position(element, target, attach, targetAttach, offset, targetOf
 
     boundary = getDimensions(boundary || window);
 
-    var flipped = {element: attach, target: targetAttach};
-
     if (flip) {
         each(dirs, (dir, [prop, align, alignFlip]) => {
 
@@ -38,8 +42,16 @@ export function position(element, target, attach, targetAttach, offset, targetOf
                 return;
             }
 
-            var elemOffset = attach[dir] === align ? -dim[prop] : attach[dir] === alignFlip ? dim[prop] : 0,
-                targetOffset = targetAttach[dir] === align ? targetDim[prop] : targetAttach[dir] === alignFlip ? -targetDim[prop] : 0;
+            var elemOffset = attach[dir] === align
+                    ? -dim[prop]
+                    : attach[dir] === alignFlip
+                        ? dim[prop]
+                        : 0,
+                targetOffset = targetAttach[dir] === align
+                    ? targetDim[prop]
+                    : targetAttach[dir] === alignFlip
+                        ? -targetDim[prop]
+                        : 0;
 
             if (position[align] < boundary[align] || position[align] + dim[prop] > boundary[alignFlip]) {
 
@@ -83,15 +95,15 @@ export function getDimensions(element) {
         }
     }
 
-    var display;
+    var display = false;
     if (!element.offsetHeight) {
-        display = getComputedStyle(element).display;
+        display = element.style.display;
         element.style.display = 'block';
     }
 
     var rect = element.getBoundingClientRect();
 
-    if (display) {
+    if (display !== false) {
         element.style.display = display;
     }
 
@@ -111,7 +123,7 @@ export function offsetTop(element) {
 }
 
 function getWindow(element) {
-    return element.ownerDocument ? element.ownerDocument.defaultView : window;
+    return element && element.ownerDocument ? element.ownerDocument.defaultView : window;
 }
 
 function moveTo(position, attach, dim, factor) {

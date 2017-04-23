@@ -6,21 +6,22 @@
     @media(max-width: 767px){
       flex-direction: column;
     }
+    &-bg{
+      padding-bottom: 60%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      @media(max-width: 767px){
+        padding-bottom: 60%;
+      }
+    }
     &-item{
       margin: 0 20px;
       width: 50%;
       @media(max-width: 767px){
         width: 100%;
       }
-      &.bg{
-        padding-bottom: 30%;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        @media(max-width: 767px){
-          padding-bottom: 60%;
-        }
-      }
+
     }
   }
 }

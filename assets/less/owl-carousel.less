@@ -1,0 +1,29 @@
+.owl-carousel{
+  &.owl-photo{
+    .owl-dots{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      .owl-dot{
+        display: inline-block;
+        padding: 10px;
+        span{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          border-radius: 50%;
+          overflow: hidden;
+          line-height: .7;
+        }
+        &.active{
+          span{
+            background: #ff543a;
+          }
+
+        }
+      }
+    }
+  }
+}

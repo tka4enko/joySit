@@ -1,5 +1,61 @@
 # Changelog
 
+## 3.0.0 beta 21 (April 11, 2017)
+
+### Added
+
+- Add Gitter icon
+- Attribute observer listens for changes to 'component' attribute too
+
+### Fixed
+
+- Fix instagram, tumblr and vimeo icons
+- Fix unexpected closing of Modal Dialog
+- Fix 'click' default behaviour prevention in Toggle
+- Fix memory leak in Icons
+
+## 3.0.0 beta 20 (April 5, 2017)
+
+### Added
+
+- Add breakpoint classes for flex alignment
+
+### Fixed
+
+- Fix Drop positioning
+- Fix imports in Modal
+- Fix 'click' default behaviour prevention in Toggle
+- Fix queued Toggle
+- Fix closing Offcanvas with swipe gesture (Android)
+- Fix Toggle icons preventing Drops from opening
+- Fix loading UIkit deferred
+
+## 3.0.0 beta 19 (March 31, 2017)
+
+### Added
+
+- Add SASS support
+- Add Leader to utility component
+- Add Offcanvas close button
+- Add margin auto vertical classes
+- Add padding left/right remove classes
+- Add tripadvisor and yelp icons
+- Add computed properties
+
+### Changed
+
+- IMPORTANT: Offcanvas requires to wrap page in extra div
+- Refactored Offcanvas component
+- Update instagram, tumblr and vimeo icons
+- Component Constructor initializes multiple components at once
+
+### Fixed
+
+- Fix Offcanvas scrolling on touch devices
+- Fix Scrollspy in view check
+- Fix text wrapping for Firefox in position component
+- Fix closing Accordion without animation
+
 ## 3.0.0 beta 18 (March 10, 2017)
 
 ### Fixed

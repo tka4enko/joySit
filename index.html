@@ -8,7 +8,10 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="bower_components/lightbox2/src/css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/lightgallery/dist/css/lg-fb-comment-box.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/lightgallery/dist/css/lg-transitions.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/lightgallery/dist/css/lightgallery.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/owl.carousel/dist/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/uikit/dist/css/uikit.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/uikit/dist/css/uikit-rtl.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -160,28 +163,149 @@
 			</div>
 			<div class="block-body">
 				<div class="container">
-					<amp-list class="items" width="200" height="100" layout="responsive" src="./data/products.json">
-						<template type="amp-mustache">
-							<div class="m1 item">
-								<a href="{{img}}" data-lightbox="product">
-									<amp-img width="640" height="426" layout="responsive" alt="{{name}}"
-											 src="{{img}}"></amp-img>
+					<div class="items">
+						<div class="m1 item">
+							<div class="item-top">
+								<a href="assets/images/products/lamzac_goroshek.png">
+									<img width="640" height="426" layout="responsive" alt=""
+										 src="assets/images/products/lamzac_goroshek.png">
 								</a>
-								<footer class="item-footer">
-									<p class="item-name">{{name}}</p>
-									<div>
-										<p class="item-old-price">
-											<del>${{old-price}}</del>
-										</p>
-										<p class="item-price">${{price}}</p>
-									</div>
-									<p class="item-button">
-										<button class="button button-primary btn-product">Купить</button>
-									</p>
-								</footer>
+								<a href="assets/images/products/lamzac_goroshek.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_goroshek.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_goroshek.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_goroshek.png" style="display: none;">
+								</a>
 							</div>
-						</template>
-					</amp-list>
+
+							<div class="item-footer">
+								<p class="item-name">Горошек</p>
+								<div>
+									<p class="item-old-price">
+										<span>1495грн</span>
+									</p>
+									<p class="item-price">1095грн</p>
+								</div>
+								<p class="item-button">
+									<a href="#" class="button button-primary btn-product" uk-toggle="target: #product">Купить</a>
+								</p>
+							</div>
+						</div>
+						<div class="m1 item">
+							<div class="item-top">
+								<a href="assets/images/products/lamzac_kamufl.png" >
+									<img width="640" height="426" layout="responsive" alt=""
+										 src="assets/images/products/lamzac_kamufl.png">
+								</a>
+								<a href="assets/images/products/lamzac_kamufl.png"  style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_kamufl.png" style="display: none;" >
+								</a>
+							</div>
+							<div class="item-footer">
+								<p class="item-name">Камуфляж</p>
+								<div>
+									<p class="item-old-price">
+										<span>1495грн</span>
+									</p>
+									<p class="item-price">1095грн</p>
+								</div>
+								<p class="item-button">
+									<a href="#" class="button button-primary btn-product" uk-toggle="target: #product">Купить</a>
+								</p>
+							</div>
+						</div>
+						<div class="m1 item">
+							<div class="item-top">
+								<a href="assets/images/products/lamzac_krasniy.png" >
+									<img width="640" height="426" layout="responsive" alt=""
+										 src="assets/images/products/lamzac_krasniy.png">
+								</a>
+								<a href="assets/images/products/lamzac_krasniy.png"  style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_krasniy.png"  style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_krasniy.png"  style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_krasniy.png"  style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_krasniy.png"  style="display: none;">
+								</a>
+							</div>
+							<div class="item-footer">
+								<p class="item-name">Красный</p>
+								<div>
+									<p class="item-old-price">
+										<span>1495грн</span>
+									</p>
+									<p class="item-price">1095грн</p>
+								</div>
+								<p class="item-button">
+									<a href="#" class="button button-primary btn-product" uk-toggle="target: #product">Купить</a>
+								</p>
+							</div>
+						</div>
+						<div class="m1 item">
+							<div class="item-top">
+								<a href="assets/images/products/lamzac_mishki.png" >
+									<img width="640" height="426" layout="responsive" alt=""
+										 src="assets/images/products/lamzac_mishki.png">
+								</a>
+								<a href="assets/images/products/lamzac_mishki.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_mishki.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_mishki.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_mishki.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_mishki.png" style="display: none;">
+								</a>
+							</div>
+							<div class="item-footer">
+								<p class="item-name">Мишки</p>
+								<div>
+									<p class="item-old-price">
+										<span>1495грн</span>
+									</p>
+									<p class="item-price">1095грн</p>
+								</div>
+								<p class="item-button">
+									<a href="#" uk-toggle="target: #product" class="button button-primary btn-product">Купить</a>
+								</p>
+							</div>
+						</div>
+						<div class="m1 item">
+							<div class="item-top">
+								<a href="assets/images/products/lamzac_zeleniy.png" >
+									<img width="640" height="426" layout="responsive" alt=""
+										 src="assets/images/products/lamzac_zeleniy.png">
+								</a>
+								<a href="assets/images/products/lamzac_zeleniy.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_zeleniy.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_zeleniy.png" style="display: none;">
+								</a>
+								<a href="assets/images/products/lamzac_zeleniy.png" style="display: none;">
+								</a>
+							</div>
+							<div class="item-footer">
+								<p class="item-name">Зеленый</p>
+								<div>
+									<p class="item-old-price">
+										<span>1495грн</span>
+									</p>
+									<p class="item-price">1095грн</p>
+								</div>
+								<p class="item-button">
+									<a href="#" uk-toggle="target: #product" class="button button-primary btn-product">Купить</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -205,8 +329,20 @@
 
 								дарить комфорт и удивлять окружающих.</p>
 						</div>
-						<div class="info-table-item bg"
-							 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+						<div class="info-table-item">
+							<div class="owl-carousel owl-photo ">
+								<div class="info-table-bg"
+									 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+								<div class="info-table-bg"
+									 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+								<div class="info-table-bg"
+									 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+								<div class="info-table-bg"
+									 style="background-image:url(assets/images/lamazac_photo.jpg);"></div>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
 			</div>
@@ -303,6 +439,8 @@
 			<h2 class="uk-modal-title block-heading">Заказать ламзак</h2>
 			<form action="" class="callback">
 				<!--<input type="hidden" class="price">-->
+				<input type="hidden" name="name_product">
+				<input type="hidden" name="name_price">
 				<div class="form-group"><input type="text" name="name" class="form-control" placeholder="Имя"></div>
 				<div class="form-group"><input type="phone" name="phone" class="form-control" placeholder="Телефон"></div>
 				<div class="form-group"><textarea name="#" cols="30" rows="10" class="form-control" placeholder="Комментарий"></textarea></div>
@@ -320,7 +458,8 @@
 <script src="assets/js/main.js"></script>
 <script src="bower_components/uikit/dist/js/uikit.js"></script>
 <script src="bower_components/uikit/dist/js/uikit-icons.js"></script>
-<script src="bower_components/lightbox2/src/js/lightbox.js"></script>
+<script src="bower_components/lightgallery/dist/js/lightgallery.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
 </body>
 
 </html>
